@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="JavaScript/jQuery.js"></script>
+    <link rel="stylesheet" href="css/AHB.css">
+    <link rel="stylesheet" href="addads.css">
+    <script type="text/javascript" src="JavaScript/AHB.js">
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="header">
+        <div class="logo">
+          <h1 style="display: none;">البازار</h1>
+          <a href="index.html"><img class="logo-img" src="img/logo.png" alt="البازار" /></a>
+          <!--Site Logo goes here-->
+        </div>
+        <div class="button-container">
+          <script type="text/javascript">
+            CreateButton("إضافة إعلان","dark add-ad","'#'");
+            //HAMZA!!!!!!!!!! link instead of #
+          </script>
+        </div>
+        <div class="sign-up-in">
+          <span><a href="log.html">تسجيل دخول/إنشاء حساب</a></span>
+        </div>
+      </div>
+    </header>
+    <div class="oll">
+      <div class="ads">
+        <div class="ads1">
+          <span class="span-addads"> اضافة اعلان </span>
+        </div>
+        <hr>
+        <form class="" action="index.html" method="post">
+          <div class="address">
+            <span class="span"> عنوان المنتج </span>
+            <input placeholder="عنوان المنتج" type="text" name="" value=""class="address-ads input">
+          </div>
+          <div class="type">
+          	<span class="span"> نوع المنتج </span>
+						<div class="cats-container">
+							<div class="menu-sort" id="menu-sort">
+								<div class="sort-dropbox">
+									<div>
+										<select name="sort" class="sort" title="الصنف الأساسي">
+											<option value="0" selected hidden>الأساسي</option>
+											<option value="1">الأحدث</option>
+											<option value="2">الأقدم</option>
+											<option value="3">الأرخص</option>
+											<option value="4">الأغلى</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="menu-sort" id="menu-sort">
+								<div class="sort-dropbox">
+									<div>
+										<select name="sort" class="sort" title="الصنف الثانوي">
+											<option value="0" selected hidden>الثانوي</option>
+											<option value="1">الأحدث</option>
+											<option value="2">الأقدم</option>
+											<option value="3">الأرخص</option>
+											<option value="4">الأغلى</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="menu-sort" id="menu-sort">
+								<div class="sort-dropbox">
+									<div>
+										<select name="sort" class="sort" title="الصنف الفرعي">
+											<option value="0" selected hidden>الفرعي</option>
+											<option value="1">الأحدث</option>
+											<option value="2">الأقدم</option>
+											<option value="3">الأرخص</option>
+											<option value="4">الأغلى</option>
+										</select>
+									</div>
+								</div>
+							</div>
+          	</div>
+					</div>
+          <div class="people">
+            <span class="span"> خصائص المنتج </span>
+            <textarea placeholder="خصائص المنتج" name="name" rows="8" cols="80" class="input textarea"></textarea>
+          </div>
+          <div class="location">
+            <span class="span"> مكان المنتج </span>
+            <input placeholder="مكان المنتج" type="text" name="" value=""class="input type-ads">
+          </div>
+          <div class="praes">
+            <span class="span"> سعر المنتج </span>
+            <input placeholder="سعر المنتج" type="text" name="" value=""class="input type-ads">
+          </div>
+          <div class="upload">
+            <div class="upload-btn-wrapper">
+              <span class="span-last"> تحميل صور </span>
+              <button class="btn"> اختيار صور </button>
+              <input class="file-picker" type="file" name="myfile" data-multiple-caption="{count} files selected" multiple accept="image/png image/jpeg image/jpg" onchange="readURL(this);">
+            </div>
+						<span class="con-span">قم باختيار ثلاثة صور على الأقل</span>
+          </div>
+          <div class="upload-img" id="upload">
+						<div id="upload-img"></div>
+          </div>
+          <div class="add-ads">
+            <button type="submit" name="button" class="btn-addads"> إضافة </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="footer">
+      <div class="foot-top-div">
+      <section class="section">
+        <h6>من نحنُ</h6>
+          <a href="#" class="footer-links">عن .....</a>
+          <a href="#" class="footer-links">.... للأعمال</a>
+          <a href="#" class="footer-links">شيء</a>
+          <a href="#" class="footer-links">شيء</a>
+      </section>
+      <section class="section">
+        <h6>مساعدة</h6>
+          <a href="#" class="footer-links">الأسئلة المكررة</a>
+          <a href="#" class="footer-links">الكفالة</a>
+      </section>
+      <section class="section">
+        <h6>عن الموقع</h6>
+          <a href="#" class="footer-links">خريطة الموقع</a>
+      </section>
+      <section class="section">
+        <h6>ابق على تواصل</h6>
+        <a href="#" class="footer-social-links" title="Facebook" style="margin-right: 0;"><img src="icons/f.png" alt="Facebook" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="Twitter"><img src="icons/t.png" alt="Twitter" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="WhatsApp"><img src="icons/w.png" alt="WhatsApp" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="Email"><img src="icons/e.png" alt="E-mail" draggable="false"></a>
+      </section>
+      </div>
+      <hr>
+        <p><span dir="ltr">&copy; Copyright 2018 something.com. All rights reserved.</span></p>
+      </div>
+    </footer>
+		<script>
+			var listOfFiles=new Array();
+			var listindex=0;
+			function readURL(input) {
+				var i=0;
+				if(listindex>=10)
+					return;
+				if(window.File && window.FileList && window.FileReader) {
+        while(input.files && input.files[i]) {
+					if(!document.getElementById("upload").classList.contains("upload-img-show")){
+						document.getElementById("upload").classList.add("upload-img-show");
+					}
+          var reader = new FileReader();
+          reader.onload = function (e) {
+						document.getElementById("upload-img").innerHTML+="<span class='uploaded-container'><span class='delete-uploaded'><div class='X-sign' id='X-sign'><div class='X1'></div><div class='X2'></div></div></span><img src='"+e.target.result+"' class='uploaded' title='"+e.target.name+"'></span>";
+						$(".delete-uploaded").click(function(){
+            	$(this).parent(".uploaded-container").remove();
+          	});
+          };
+          reader.readAsDataURL(input.files[i]);
+					listOfFiles[listindex]=input.files[i];
+					listindex++;
+					if(listindex==10)
+						return;
+					i++;
+        }
+				i=0;
+				while(i<listOfFiles.length)
+					{
+						input.files[i]=listOfFiles[i];
+						i++;
+					}
+				}
+				else { alert("Your browser doesn't support to File API") }
+    }
+		</script>
+  </body>
+</html>

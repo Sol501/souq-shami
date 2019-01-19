@@ -1,0 +1,101 @@
+body{
+  background: #dbdbdb;
+  margin: 0;
+	color: #232323;
+}
+.accept{
+  display: block;
+	width: 100%;
+	margin: 120px auto;
+}
+.accept1{
+  background-color: #eaeaea;
+  margin: 0 auto;
+  border: 1px solid #e70000;
+  border-radius: 5px;
+  width: 350px;
+  padding: 20px;
+}
+.accept2{
+  width: 100%;
+  height: 32px;
+}
+.span-accept{
+  display: block;
+  font-weight: bolder;
+  color: #232323;
+  font-size: 25px;
+  width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 1px #9f9f9f;
+}
+hr{
+  border: 0.5px solid #c4c4c4;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.email-span{
+  font-size: 21px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.text-span{
+	font-size: 18px;
+}
+
+.code-text{
+	color: #232323;
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px 0 8px 0;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+	text-align: center;
+    display: inline-block;
+    border: 1px solid #ff2c2c;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.3s
+}
+
+.code-text::placeholder{
+	opacity: 1;
+	transition: all 0.2s;
+}
+
+.code-text:focus::placeholder{
+	opacity: 0;
+}
+
+.code-text:focus{
+  box-shadow: 1px 1px 1px rgba(167, 167, 167, 0.8);
+  border: 1px solid #ff4444;
+}
+
+.button-sint{
+      display: block;
+      background-color: transparent;
+      margin: 0 auto 0 auto;
+      width: 100px;
+      height: 40px;
+      font-weight: bold;
+      font-size: 16px;
+      border: 1px solid #232323;
+      color: #232323;
+      border-radius: 3px;
+      transition: all 0.3s;
+}
+.button-sint:hover{
+  cursor: pointer;
+	background-color: #232323;
+	color: #dbdbdb;
+}
+
+@media screen and (max-width:443px){
+	.accept1{
+		width: 80%;
+	}
+}

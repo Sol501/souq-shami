@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title> تعديل الصفحة الشخصية </title>
+    <link rel="stylesheet" href="edit-profile.css">
+    <link rel="stylesheet" href="css/AHB.css">
+    <script type="text/javascript" src="JavaScript/jQuery.js"></script>
+    <script type="text/javascript" src="JavaScript/AHB.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <div class="header">
+        <div class="logo">
+          <h1 style="display: none;">البازار</h1>
+          <a href="index.html"><img class="logo-img" src="img/logo.png" alt="البازار" /></a>
+          <!--Site Logo goes here-->
+        </div>
+        <div class="button-container">
+          <script type="text/javascript">
+            CreateButton("إضافة إعلان","dark add-ad","'#'");
+            //HAMZA!!!!!!!!!! link instead of #
+          </script>
+        </div>
+      </div>
+    </header>
+    <div class="all">
+			<div class="all-content">
+      	<form class="" action="profile.html" method="post">
+      	<div class="div-img-profael">
+      	  <img src="icons/index.png" alt="" class="img-profael" id="img-profael">
+      	  <div class="upload">
+      	    <div class="upload-btn-wrapper">
+      	      <button type="button" class="btn"><img src="icons/edit.png"></button>
+      	      <input type="file" name="myfile" accept="image/*" onchange="readURL(this);">
+      	    </div>
+      	  </div>
+      	  <hr>
+      	</div>
+      	<div class="inf-not-edit">
+      	  <span class="span-edit" style="display:inline-block;"> اسم المستخدم : </span>
+      	  <span class="span-edit1"style="display:inline-block;">ابن كلب</span>
+					<br>
+					<br>
+      	  <span class="span-edit" style="display:inline-block;"> البريد الاكتروني: </span>
+					<span class="span-edit1" style="display:inline-block;">a.lolo@momo.com</span>
+      	  <hr style="margin-top:20px;">
+      	</div>
+      	  <div class="inf-edit">
+      	    <span class="span-edit"> رقم الهاتف: </span>
+						<div class="current-edit-container">
+							<span class="current-value">0966778899</span>
+							<button type="button" onclick="opentext(0);"><img src="icons/edit2.png" class="edit-icon"></button>
+						</div>
+						<div class="text-edit-container">
+      	    	<input type="text" name="" class="text-edit">
+							<div class="X-sign" id="X-sign" onclick="closetext(0);">
+								<div class="X1"></div>
+								<div class="X2"></div>
+							</div>
+						</div>
+      	    <span class="span-edit"> كلمة المرور: </span>
+						<div class="current-edit-container">
+							<span class="current-value">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</span>
+							<button type="button" onclick="opentext(1);"><img src="icons/edit2.png" class="edit-icon"></button>
+						</div>
+						<div class="text-edit-container">
+      	    	<input type="password" name="" class="text-edit">
+							<div class="X-sign" id="X-sign" onclick="closetext(1);">
+								<div class="X1"></div>
+								<div class="X2"></div>
+							</div>
+						</div>
+      	  </div>
+					<hr>
+					<div style="width: 100%">
+						<button type="submit" class="buttons-edit" > تعديل </button>
+					</div>
+      	</form>
+			</div>
+    </div>
+    <footer class="foot">
+        <div class="footer">
+        <div class="foot-top-div">
+        <section class="section">
+          <h6>من نحنُ</h6>
+            <a href="#" class="footer-links">عن .....</a>
+            <a href="#" class="footer-links">.... للأعمال</a>
+            <a href="#" class="footer-links">شيء</a>
+            <a href="#" class="footer-links">شيء</a>
+        </section>
+        <section class="section">
+          <h6>مساعدة</h6>
+            <a href="#" class="footer-links">الأسئلة المكررة</a>
+            <a href="#" class="footer-links">الكفالة</a>
+        </section>
+        <section class="section">
+          <h6>عن الموقع</h6>
+            <a href="#" class="footer-links">خريطة الموقع</a>
+        </section>
+        <section class="section">
+          <h6>ابق على تواصل</h6>
+          <a href="#" class="footer-social-links" title="Facebook" style="margin-right: 0;"><img src="icons/f.png" alt="Facebook" draggable="false"></a>
+          <a href="#" class="footer-social-links" title="Twitter"><img src="icons/t.png" alt="Twitter" draggable="false"></a>
+          <a href="#" class="footer-social-links" title="WhatsApp"><img src="icons/w.png" alt="WhatsApp" draggable="false"></a>
+          <a href="#" class="footer-social-links" title="Email"><img src="icons/e.png" alt="E-mail" draggable="false"></a>
+        </section>
+        </div>
+        <hr>
+          <p><span dir="ltr">&copy; Copyright 2018 something.com. All rights reserved.</span></p>
+        </div>
+      </footer>
+		<script type="text/javascript">
+			function opentext(index){
+				textbox=document.getElementsByClassName("text-edit-container");
+				textbox1=document.getElementsByClassName("text-edit");
+				old=document.getElementsByClassName("current-edit-container");
+				textbox[index].style.display="block";
+				textbox1[index].focus();
+				old[index].style.display="none";
+				for(var i=0;i<textbox.length;i++){
+					if(i!=index && textbox[i].style.display=="block" && textbox1[i].value==""){
+						textbox[i].style.display="none";
+						old[i].style.display="block";
+					}
+				}
+			}
+			function closetext(index){
+				textbox=document.getElementsByClassName("text-edit-container");
+				old=document.getElementsByClassName("current-edit-container");
+				textbox1=document.getElementsByClassName("text-edit");
+				textbox[index].style.display="none";
+				old[index].style.display="block";
+				textbox1[index].value="";
+			}
+			function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#img-profael').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+       	}
+    	}
+		</script>
+  </body>
+</html>

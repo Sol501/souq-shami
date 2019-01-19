@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+    <meta charset="utf-8">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="JavaScript/jQuery.js"></script>
+		<link type="text/css" rel="stylesheet" href="CSS/AHB.css">
+		<link type="text/css" rel="stylesheet" href="log.css">
+		<script src="log.js" type="text/javascript"></script>
+		<script src="JavaScript/AHB.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<header class="head">
+			<div class="header">
+	      <div class="logo">
+	        <h1 style="display: none;">البازار</h1>
+					<a href="index.html"><img class="logo-img" src="img/logo.png" alt="البازار" /></a>
+	        <!--Site Logo goes here-->
+	      </div>
+	      <div class="button-container">
+	        <script type="text/javascript">
+	        	CreateButton("إضافة إعلان","dark add-ad","'#'");
+						//HAMZA!!!!!!!!!! link instead of #
+	        </script>
+	      </div>
+			</div>
+	  </header>
+	  <div class="main-div">
+			<div class="modal-content">
+				<div class="form-chooser">
+					<div class="login-choice" id="login-choice" onclick="change_selected_style(this)">
+						<span>&nbsp;تسجيل دخول<hr class="animate-hr"></span>
+					</div>
+					<div class="not-selected" id="signup-choice" onclick="change_selected_style(this)">
+						<span>&nbsp;إنشاء حساب<hr class="animate-hr"></span>
+					</div>
+				</div>
+      	<form class="animat id01" action="" name="From1" id="f1" method="post">
+      	  <div class="signin-label-container"><span class="signinlabel">تسجيل الدخول</span></div>
+      	  <hr>
+      		<div class="container" >
+      		  <input type="text" class="form" placeholder="اسم الستخدم" id="inusername" name="uname" required oninput="" value="" autocomplete="off">
+      		  <p id="unvalid"></p>
+      		  <input type="password" class="form" placeholder="كلمة المرور" name="psw" id="inpsw" required oninput=""> 
+      		  <p id="pwsinvalidin"></p>
+						<label class="checkbox-container">احتفظ ببيانات التسجيل الخاصة بي
+      		  	<input type="checkbox" name="remember1" class="remember-me-check">
+							<span class="checkmark"></span>
+						</label>
+      		  <br>
+      		  <div class="submit-container"><button type="submit" class="buttons loginb" id="subin">تسجيل دخول</button></div>
+      		</div>
+      	</form>
+				<form class="animat id02 remove-form" action="" name="From1" id="f2" method="post">
+      	  <div class="signin-label-container"><span class="signinlabel">إنشاء حساب</span></div>
+      	  <hr>
+      		<div class="container" >
+      		  <input type="text" class="form1" placeholder="الاسم" id="first-name" name="uname" required oninput="validate_name(this)" value="" autocomplete="off">
+      		  <p id=""></p>
+      		  <input type="text" class="form1" placeholder="الكنية" name="psw" oninput="validate_name(this)" id="last-name" required> 
+      		  <p id=""></p>
+      		  <input type="email" class="form1" placeholder="البريد الإلكتروني" name="psw" id="email" required> 
+      		  <p id=""></p>
+						<div class="gender-container">
+							<span class="sex">الجنس : </span>
+            	<div class="gender-chooser-container">
+								<input type="radio" value="male" name="gender" class="gender-chooser" checked>ذكر
+							</div>
+            	<div class="gender-chooser-container">
+								<input type="radio" value="Female" class="gender-chooser" name="gender">أنثى
+            	</div>
+						</div>
+						<input type="text" class="form1" placeholder="رقم الجوال" name="psw" id="phone-number" oninput="check_valid_num(this)" required> 
+      		  <input type="password" class="form1" placeholder="كلمة المرور" name="psw" id="password" required oninput="check_password();"> 
+      		  <p id="pswvalid"></p>
+      		  <input type="password" class="form1" placeholder="تأكيد كلمة المرور" name="psw" id="password-confirmation" required> 
+      		  <p id=""></p>
+      		  <div class="submit-container"><button type="submit" class="buttons loginb" id="subin">إنشاء</button></div>
+      		</div>
+      	</form>
+    	</div>
+		</div>
+		<footer class="foot">
+			<div class="footer">
+			<div class="foot-top-div">
+      <section class="section">
+        <h6>من نحنُ</h6>
+          <a href="#" class="footer-links">عن .....</a>
+          <a href="#" class="footer-links">.... للأعمال</a>
+          <a href="#" class="footer-links">شيء</a>
+          <a href="#" class="footer-links">شيء</a>
+      </section>
+      <section class="section">
+        <h6>مساعدة</h6>
+          <a href="#" class="footer-links">الأسئلة المكررة</a>
+          <a href="#" class="footer-links">الكفالة</a>
+			</section>
+			<section class="section">
+        <h6>عن الموقع</h6>
+          <a href="#" class="footer-links">خريطة الموقع</a>
+			</section>
+      <section class="section">
+        <h6>ابق على تواصل</h6>
+        <a href="#" class="footer-social-links" title="Facebook" style="margin-right: 0;"><img src="icons/f.png" alt="Facebook" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="Twitter"><img src="icons/t.png" alt="Twitter" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="WhatsApp"><img src="icons/w.png" alt="WhatsApp" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="Email"><img src="icons/e.png" alt="E-mail" draggable="false"></a>
+      </section>
+			</div>
+			<hr>
+				<p><span dir="ltr">&copy; Copyright 2018 something.com. All rights reserved.</span></p>
+			</div>
+    </footer>
+	</body>
+</html>

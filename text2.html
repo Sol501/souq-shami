@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title>product</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="JavaScript/jQuery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="JavaScript/AHB.js"></script>
+    <script type="text/javascript" src="text2.js"></script>
+		<link rel="stylesheet" href="CSS/AHB.css">
+    <link rel="stylesheet" href="sp.css">
+  </head>
+  <body>
+    <header class="head">
+			<div class="header">
+	      <div class="logo">
+	        <h1 style="display: none;">البازار</h1>
+					<a href="index.html"><img class="logo-img" src="img/logo.png" alt="البازار" /></a>
+	        <!--Site Logo goes here-->
+	      </div>
+				<div class="bottom-things">
+	      	<div class="button-container">
+	      	  <script type="text/javascript">
+	      	  	CreateButton("إضافة إعلان","dark add-ad","'#'");
+							//HAMZA!!!!!!!!!! link instead of #
+	      	  </script>
+	      	</div>
+				</div>
+	      <div class="sign-up-in">
+	      	<span><a href="log.html">تسجيل دخول/إنشاء حساب</a></span>
+	      </div>
+			</div>
+	  </header>
+		<div class="pop-up-container" id="pop-up-container">
+			<form class="pop-up-form" action="#" method="post" id="pop-up-form">
+				<div class="X-sign" id="X-sign">
+					<div class="X1"></div>
+					<div class="X2"></div>
+				</div>
+				<span class="report-label">إبلاغ</span>
+				<hr>
+				<label for="report">محتوى البلاغ :</label>
+				<textarea id="report" name="report" class="report" placeholder="البلاغ يجب أن يكون بين ال10~200 كلمة..."></textarea>
+				<div style="width: 100%;"><button type="submit"><span>إرسال</span></button></div>
+			</form>
+		</div>
+		<div class="inf">
+			<div class="ad-title">
+				<span>سيارة سياحية للبيع</span>
+				<hr>
+			</div>
+		</div>
+		<div class="top-content">
+			<div class="right-content">
+  	  	<div class="text-price">
+					<span><span name="price" class="price">20,000</span>&#160;&#160;&#160;&#160;ل.س</span>
+  	  	</div>
+  	  	<div class="images-container">
+  	  	  <div class="image-slideshow">
+						<div class="actual-images">
+  	  	    	<img src="img/audi.jpeg" alt=""id="img1" class="im" draggable="false">
+  	  	    	<img src="img/taxi.jpeg" alt="" id="img2" class="im" draggable="false">
+  	  	    	<img src="img/iphone.jpeg" alt=""id="img3" class="im" draggable="false">
+  	  	    	<img src="img/lab.jpeg" alt=""id="img4" class="im" draggable="false">
+						</div>
+						<button type="button" class="button-n slideshow-buttons" onclick="plusDivs(+1)">&#10094;</button>
+						<button type="button" class="button-b slideshow-buttons" onclick="plusDivs(-1)">&#10095;</button>
+					</div>
+  	  	</div>
+			</div>
+			<div class="logged-in-left-content left-content">
+		    <div class="contact-container">
+		      <div class="profile">
+		        <p> اسم الشخص</p>
+		        <span class="visit"><a href="#"> زيارة الملف الشخصي </a></span>
+		      </div>
+		      <div class="time1">
+						<p>تم إنشاء الحساب منذ :</p>
+						<p><span style="font-weight: bold; margin-right: 0.5%">5</span> سنوات\سنة</p>
+    		  </div>
+    		  <hr>
+    		  <div class="swith-d">
+						<p>  للتواصل مع <span>اسم الشخص</span> عبر الهاتف :</p>
+    		    <p><span dir="ltr" style="margin-right: 0.5%">+963962804763</span></p>
+    		  </div>
+    		  <hr>
+    		  <div class="shat-login">
+						<div class="message-button-container" id="message-button-container"><a href="#comment-anchor" class="message-button"><span>إضافة تعليق</span></a></div>
+						<div class="report-button-container" id="report-button-container">
+							<span>إبلاغ</span>
+						</div>
+    		  </div>
+    		  <hr>
+    		  <div class="favorite">
+						<!--if logged in display these buttons-->
+						<div class="logged-in-buttons-container">
+    		    	<div class="like-button-container"><button type="button" name="button"class="like" title="إضافة للمفضلة" onclick="change_background(this)"></button></div>
+							<div class="num-likes-container">
+								<span class="num-likes-label">الإعجابات :</span>
+								<br>
+								<span class="num-likes">1203</span>
+							</div>
+						</div>
+						<!--if not logged in display this button-->
+						<div class="login-button-container"><a href="#" class="login-button"><img src="icons/user-man-enter-login-signup-512.png" alt="" /><span>تسجيل الدخول</span></a></div>
+    		    <!--<form class="" action="#" method="post">
+    		      <input type="text" name="" placeholder="أضف تعليقاً" class="comment-input">
+    		      <button type="button" name="button"class="send-note"><span>إرسال</span></button>
+    		    </form>-->
+    		  </div>
+    		</div>
+			</div>
+		</div>
+		<div class="buttom-content">
+			<span class="time">تم نشر الإعلان&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span>منذ 5 دقائق</span></span>
+	    <div class="inf">
+				<div class="discreption">
+    		  <hr style="margin-top: 0; width: 60%; margin-right: 15px; border-color: #d3d3d3;">
+					<span>تفاصيل المنتج :</span>
+					<p>صينخصشحةتجطشصحى صشب صىحبهخشص ىبهخصى صهخشىب صهشبىشصخىب
+					بخص شىبحشصطةب شصخحطبة صشخحبة شصخحبة شصخحبة 
+					ة خحشصىبشصحخبىةشصخحة شصحخبة شصخحةشص</p>
+					<hr>
+				</div>
+				<div class="location">
+					<span>مكان تواجد المنتج :</span>
+					<p>
+						دمشق ,المزة
+					</p>
+					<hr>
+				</div>
+				<div class="price">
+					<span>سعر المنتج :</span>
+					<p>
+						20,000&#160;&#160;&#160;ل.س
+					</p>
+					<hr>
+				</div>
+	    </div>
+			<div class="comment-section-container">
+				<span id="comment-anchor">التعليقات :</span>
+				<form action="#" method="post" class="comment-input-form">
+					<textarea maxlength="500" class="comment-input" placeholder="اكتب تعليقك هنا..."></textarea>
+					<button type="submit" class="add-comment-button">تعليق</button>
+				</form>
+				<div class="comment-container">
+					<div class="commenter-container">
+						<span class="commenter-name"><span>&#10095;</span><a href="#">أحمد الشايب</a></span>
+						<span class="time-comment">منذ 21 دقيقة</span>
+					</div>
+					<div class="comment">
+						<span>&#10095;</span>
+						<p>هذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائع</p>
+					</div>
+				</div>
+				<div class="comment-container">
+					<div class="commenter-container">
+						<span class="commenter-name"><span>&#10095;</span><a href="#">أحمد الشايب</a></span>
+						<span class="time-comment">منذ 21 دقيقة</span>
+					</div>
+					<div class="comment">
+						<span>&#10095;</span>
+						<p>هذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائع</p>
+					</div>
+				</div>
+				<div class="comment-container">
+					<div class="commenter-container">
+						<span class="commenter-name"><span>&#10095;</span><a href="#">أحمد الشايب</a></span>
+						<span class="time-comment">منذ 21 دقيقة</span>
+					</div>
+					<div class="comment">
+						<span>&#10095;</span>
+						<p>هذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائع</p>
+					</div>
+				</div>
+				<div class="comment-container">
+					<div class="commenter-container">
+						<span class="commenter-name"><span>&#10095;</span><a href="#">أحمد الشايب</a></span>
+						<span class="time-comment">منذ 21 دقيقة</span>
+					</div>
+					<div class="comment">
+						<span>&#10095;</span>
+						<p>هذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائعهذا المنتج رائع</p>
+					</div>
+				</div>
+			</div>
+			<div class="more-container">
+				<div class="more-button-container">
+					<button type="button" class="more-button" onclick="more();">المزيد</button>
+				</div>
+			</div>
+			<hr class="after-comment-hr">
+			<span class="recommended">إعلانات ذات صلة :</span>
+	    <div class="relevant-ads" dir="rtl" id="relevant-ads">
+				<div id="ads-con"></div>
+				<script>
+					addmaker("img/taxi.jpeg","text2.html","عنوان الاعلان","icons/index.png","تفاصيل الاعلان التي هي عبارة عن نص طويل لا يتعدا العدةأسطر التي هي الحد الأقسى");
+					addmaker("img/taxi.jpeg","text2.html","عنوان الاعلان","icons/index.png","تفاصيل الاعلان التي هي عبارة عن نص طويل لا يتعدا العدةأسطر التي هي الحد الأقسى");
+					addmaker("img/taxi.jpeg","text2.html","عنوان الاعلان","icons/index.png","تفاصيل الاعلان التي هي عبارة عن نص طويل لا يتعدا العدةأسطر التي هي الحد الأقسى");
+					addmaker("img/taxi.jpeg","text2.html","عنوان الاعلان","icons/index.png","تفاصيل الاعلان التي هي عبارة عن نص طويل لا يتعدا العدةأسطر التي هي الحد الأقسى");
+				</script>
+    	</div>
+		</div>
+		<footer class="foot">
+			<div class="footer">
+			<div class="foot-top-div">
+      <section class="section">
+        <h6>من نحنُ</h6>
+          <a href="#" class="footer-links">عن .....</a>
+          <a href="#" class="footer-links">.... للأعمال</a>
+          <a href="#" class="footer-links">شيء</a>
+          <a href="#" class="footer-links">شيء</a>
+      </section>
+      <section class="section">
+        <h6>مساعدة</h6>
+          <a href="#" class="footer-links">الأسئلة المكررة</a>
+          <a href="#" class="footer-links">الكفالة</a>
+			</section>
+			<section class="section">
+        <h6>عن الموقع</h6>
+          <a href="#" class="footer-links">خريطة الموقع</a>
+			</section>
+      <section class="section">
+        <h6>ابق على تواصل</h6>
+        <a href="#" class="footer-social-links" title="Facebook" style="margin-right: 0!important;"><img src="icons/f.png" alt="Facebook" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="Twitter"><img src="icons/t.png" alt="Twitter" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="WhatsApp"><img src="icons/w.png" alt="WhatsApp" draggable="false"></a>
+        <a href="#" class="footer-social-links" title="Email"><img src="icons/e.png" alt="E-mail" draggable="false"></a>
+      </section>
+			</div>
+			<hr>
+				<p><span dir="ltr">&copy; Copyright 2018 something.com. All rights reserved.</span></p>
+			</div>
+    </footer>
+		<script>
+			showDivs(slideIndex);
+		</script>
+  </body>
+</html>

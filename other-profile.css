@@ -1,0 +1,405 @@
+body{
+  background-color: #dbdbdb;
+	margin: 0;
+	color: #232323;
+	min-width: 300px;
+}
+
+.oll{
+  background-color: #dbdbdb;
+  width: 800px;
+  margin:30px auto 10px auto;
+	transition: all 0.3s;
+}
+
+.all-container{
+	width: 100%;
+}
+
+.user-info{
+	position: relative;
+  width: 100%;
+  height: 155px;
+  border-radius: 3px;
+	border: 2px solid #cbcbcb;
+}
+
+.oll img{
+  width:20%;
+	height:20%;
+}
+
+.user-image{
+	height: 128px!important; 
+	width: 128px!important;
+	float: right;
+	padding: 10px;
+	border-radius: 100px;
+}
+
+.infrmation-2{
+	float: right;
+	margin-right: 20px;
+}
+
+.edit-profile{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.infrmation-2 span{
+	display: inline-block;
+	width: 100%;
+	margin: 3px 0;
+	font-size: 18px;
+}
+
+.user-location img{
+	height: 24px;
+	width: 24px;
+}
+
+.infrmation-2 h2{
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+
+.asd{
+  width: 100%;
+  border-radius: 3px;
+	border: 2px solid #cbcbcb;
+  margin-top: 20px;
+}
+
+.asd-1{
+	position: relative;
+  width:100%;
+  height: 215px;
+	margin-top:10px;
+}
+
+.asd-1 img{
+	border-radius: 4px;
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+.infrmation-asd{
+  width: 70%;
+	float: right;
+}
+
+h3{
+	margin-top: 20px;
+}
+
+hr{
+  width: 60%;
+	border: 0.5px solid #c4c4c4;
+}
+
+.ad-img-container{
+	width: 30%;
+	float: right;
+}
+
+.time{
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.discr{
+	background-color: transparent;
+	width: 500px;
+	height: 80px;
+	resize: none;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	color: #232323;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+.pro-more-container{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.pro-more-button-container{
+	width: 80px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.like{
+  background-image: url(icons/hearts.png);
+  background-repeat: no-repeat;
+	border: none;
+	margin-right: 5%;
+	background-size: 50px;
+	padding: 25px;
+	float: right;
+	transition: all 0.3s;
+	outline: none;
+}
+
+.like:hover{
+	cursor: pointer;
+}
+
+.liked{
+  background-image: url(icons/hr.png);
+  background-repeat: no-repeat;
+	border: none;
+	margin-right: 5%;
+	background-size: 50px;
+	padding: 25px;
+	float: right;
+	transition: all 0.3s;
+	outline: none;
+}
+
+.liked:hover{
+	cursor: pointer;
+}
+
+.like-button-container{
+	position: absolute;
+	width: 10%;
+	height: 50px;
+	left: 0;
+	top:76%;
+}
+
+.edit{
+  width:32px;
+	height: 32px;
+	margin-left: 10px;
+  background-image: url(icons/edit2.png);
+  background-repeat: no-repeat;
+  background-size: 32px;
+	border: none;
+	outline: none;
+}
+
+.edit:hover{
+	cursor: pointer;
+}
+
+.edit-del{
+	position: absolute;
+	left: 20px;
+	top:84%;
+}
+
+.del{
+  width:32px;
+	height: 32px;
+  background-image: url(icons/46-512.png);
+  background-repeat: no-repeat;
+  background-size: 32px;
+	border: none;
+	outline: none;
+}
+
+.del:hover{
+	cursor: pointer;
+}
+
+.delete-ad-form-container, .sold-ad-form-container{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 9;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.delete-ad-form-container-new, .sold-ad-form-container-new{
+	display: block;
+}
+
+.delete-ad-form, .sold-ad-form{
+	opacity: 0;
+	position: relative;
+	background-color: #dbdbdb;
+	width: 350px;
+	height: 150px;
+	margin: 15% auto 0 auto;
+	border: 1px solid #e70000;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px 1px rgba(255, 38, 38, 0.53);
+}
+
+.delete-ad-form span, .sold-ad-form span{
+	font-size: 22px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: 20px;
+	text-shadow: 1px 1px 1px #808080;
+}
+
+.delete-ad-form button, .sold-ad-form button{
+	border: 2px solid #232323;
+	background-color: transparent;
+	border-radius: 4px;
+	height: 40px;
+	width: 80px;
+	font-size: 22px;
+	text-shadow: 1px 1px 2px #848484;
+	color: #232323;
+	transition: all 0.3s;
+	outline: none;
+}
+
+.cancel-del, .cancel-sold{
+	margin-left: 20px;
+}
+
+.confirm-del, .confirm-sold{
+	margin-right: 20px;
+}
+
+.delete-ad-form button:hover, .sold-ad-form button:hover{
+	cursor: pointer;
+	color: #dbdbdb;
+	background-color: #232323;
+	text-shadow: 1px 1px 2px #414141;
+}
+
+.delete-ad-form-new, .sold-ad-form-new{
+	animation: zoominopacity 0.5s;
+	-webkit-animation: zoominopacity 0.5s;
+	-moz-animation: zoominopacity 0.5s;
+	-ms-animation: zoominopacity 0.5s;
+	-o-animation: zoominopacity 0.5s;
+	opacity: 1;
+}
+
+@-webkit-keyframes zoominopacity{
+	from{-webkit-opacity: 0;}
+	to{-webkit-opacity: 1;}
+}
+
+@-moz-keyframes zoominopacity{
+	from{-moz-opacity: 0;}
+	to{-moz-opacity: 1;}
+}
+
+@-ms-keyframes zoominopacity{
+	from{-ms-opacity: 0;}
+	to{-ms-opacity: 1;}
+}
+
+@-o-keyframes zoominopacity{
+	from{-o-opacity: 0;}
+	to{-o-opacity: 1;}
+}
+
+@keyframes zoominopacity{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@media screen and (max-width: 836px){
+	.oll{
+		width: 550px;
+	}
+	.infrmation-2{
+		width: 330px;
+	}
+	.infrmation-asd{
+		width: 65%;
+	}
+	.ad-img-container{
+		width: 35%;
+	}
+	.asd-1 img{
+		width: 150px;
+		height: 150px;
+	}
+	.discr{
+		width: 350px;
+	}
+	.resp-price-date{
+		position: absolute;
+		right: 20px;
+		bottom: 10px;
+		transition: all 0.2s;
+	}
+	.like-button-container{
+		width: 13%;
+	}
+}
+
+@media screen and (max-width: 605px){
+	.oll{
+		width: 280px;
+	}
+	.user-image{
+		display: block;
+		height: 100px!important; 
+		width: 100px!important;
+		padding: 0;
+	}
+	.resp-user-img{
+		width: 100px;
+		margin: 5px auto;
+	}
+	.user-info{
+		height: 260px;
+	}
+	.edit-profile{
+		left: 0px;
+	}
+	.infrmation-2{
+		width: 235px;
+		margin-right: 8px;
+	}
+	h2{
+		width: 280px;
+		text-align: center;
+		margin-right: -8px;
+	}
+	.edit-profile .edit{
+		margin-left: 5px;
+	}
+	.ad-img-container{
+		width: 100%;
+	}
+	.ad-img-container img{
+		width: 235px;
+		height: 235px;
+	}
+	.asd-1{
+		height: 460px;
+	}
+	.resp-price-date{
+		position:inherit;
+	}
+	.edit-del{
+		left: 5px;
+		top:92%;
+	}
+	.infrmation-asd{
+		width: 95%;
+		margin-right: 5px;
+	}
+	.discr{
+		width: 100%;
+	}
+	.like-button-container{
+		width: 20%;
+		top: 89%;
+	}
+}

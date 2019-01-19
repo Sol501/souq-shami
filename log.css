@@ -1,0 +1,377 @@
+body{
+	background-color: #dbdbdb;
+	color: #232323;
+	margin: 0;
+	min-width: 300px;
+}
+
+.main-div {
+  display:block;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+input[type=text]::placeholder,input[type=password]::placeholder,input[type=email]::placeholder{
+	font-size: 18px;
+	color: rgba(35, 35, 35, 0.77);
+}
+
+.id01 hr,.id02 hr{
+	border: 0.5px solid #c4c4c4;
+	width: 60%;
+}
+
+.main-div h4{
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 40px;
+	font-size: 1.2vw;
+}
+
+.modal-content {
+  background-color: #eaeaea;
+  margin: 0 auto 5px auto;
+  border: 1px solid #e70000;
+  width: 400px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px 2px rgba(168, 168, 168, 0.53);
+}
+
+id01,id02{
+	opacity: 0;
+}
+
+.animat {
+    -webkit-animation: animatezoom 0.6s;
+		-moz-animation: animatezoom 0.6s;
+		-ms-animation: animatezoom 0.6s;
+		-o-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-opacity:0} 
+    to {-webkit-opacity:1}
+}
+
+@-moz-keyframes animatezoom {
+	from {-moz-opacity:0} 
+    to {-moz-opacity:1}
+}
+
+@-o-keyframes animatezoom {
+	from {-o-opacity:0} 
+    to {-o-opacity:1}
+}
+
+@-ms-keyframes animatezoom {
+	from {-ms-opacity:0} 
+    to {-ms-opacity:1}
+}
+    
+@keyframes animatezoom {
+	from {opacity:0} 
+    to {opacity:1}
+}
+
+.animate-hr{
+    -webkit-animation: widenup 0.4s;
+		-moz-animation: widenup 0.4s;
+		-ms-animation: widenup 0.4s;
+		-o-animation: widenup 0.4s;
+    animation: widenup 0.4s;
+}
+
+@-webkit-keyframes widenup {
+	from {-webkit-width:0%} 
+    to {-webkit-width:40%}
+}
+
+@-moz-keyframes widenup {
+	from {-moz-width:0%} 
+    to {-moz-width:40%}
+}
+
+@-ms-keyframes widenup {
+	from {-ms-width:0%} 
+    to {-ms-width:40%}
+}
+
+@-o-keyframes widenup {
+	from {-o-width:0%} 
+    to {-o-width:40%}
+}
+    
+@keyframes widenup {
+	from {width:0%} 
+    to {width:40%}
+}
+
+.container {
+    padding: 16px 10%;
+}
+
+.form,.form1{
+    width: 100%;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #ff2c2c;
+    box-sizing:border-box;
+    outline: 0;
+	transition: all 0.3s;
+}
+
+.form:focus,.form1:focus{
+  box-shadow: 1px 1px 1px rgba(167, 167, 167, 0.8);
+  border: 1px solid #ff4444;
+}
+
+.loginb{
+	display: block;
+	background-color: transparent;
+	margin: 0 auto 0 auto;
+  width: 100px;
+  height: 40px;
+	font-weight: bold;
+  font-size: 16px;
+	border: 1px solid #232323;
+	color: #232323;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+
+.submit-container{
+	width: 100%;
+}
+
+.loginb:hover{
+	cursor: pointer;
+	background-color: #232323;
+	color: #dbdbdb;
+}
+
+.signinlabel{
+	display: block;
+	margin: 35px auto 0 auto;
+  font-weight: bolder;
+	color: #232323;
+  font-size: 25px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+	text-align: center;
+	width: 100%;
+}
+
+.signin-label-container{
+	width: 100%;
+	height: 35px;
+}
+
+.form-chooser{
+	width: 100%;
+	height: 30px;
+}
+
+.login-choice, .signup-choice, .not-selected{
+	float: left;
+	width: 50%;
+}
+
+.login-choice:hover, .signup-choice:hover{
+	cursor: default;
+}
+
+.remember-me-check{
+	border: 1px solid #232323;
+	outline: none;
+}
+
+.remember-me-check:hover{
+	cursor: pointer;
+}
+
+.login-choice span, .signup-choice span ,.not-selected span{
+	display: block;
+	width: 100%;
+	margin: 20px auto 10px auto;
+	font-size: 18px;
+	text-align: center;
+	user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;	
+}
+
+.login-choice hr, .signup-choice hr{
+	border: 0.5px solid #ff1b1b;
+	margin-top: 3px;
+	margin-bottom: 0;
+	box-shadow: 0 0px 1px #ff0000;
+	width: 40%;
+}
+
+.not-selected hr{
+	display: none;
+}
+
+.not-selected{
+	margin-bottom: 14px;
+	background-color: rgba(82, 82, 82, 0.26);
+}
+
+.not-selected:hover{
+	cursor: pointer;
+}
+
+.remove-form{
+	display: none;
+}
+
+.checkbox-container{
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+	background-color: transparent;
+}
+
+.checkbox-container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 22px;
+  width: 22px;
+  background-color: transparent;
+	transition: all 0.3s;
+	border-radius: 4px;
+	border: 2px solid #232323;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #232323;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sex{
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	width: 25%;
+	float: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.gender-chooser{
+	display: block;
+	float: right;
+	margin-top: -1px;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+.gender-chooser:hover{
+	cursor: pointer;
+}
+
+.gender-chooser-container{
+	margin-top: 5px;
+	float: right;
+	width: 30%;
+	font-size: 16px;
+	font-weight:bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.gender-container{
+	width: 100%;
+	height: 50px;
+}
+
+p{
+	margin-top: 10px;
+	color: #ff1c1c;
+}
+
+.button-container{
+	display: none;
+}
+
+.logo a{
+	width: 140px;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+.logo{
+	width: 100%;
+	height: 50%;
+}
+
+@media screen and (max-width: 605px){
+	.head{
+		height: 85px;
+	}
+}
+
+@media screen and (max-width:600px){
+	.loginb{
+		background-color: #232323;
+		color: #dbdbdb;
+	}
+}
+
+@media screen and (max-width:435px){
+	.modal-content{
+		width: 90%;
+	}
+}

@@ -1,0 +1,219 @@
+body{
+  background: #dbdbdb;
+  margin: 0;
+}
+
+.all{
+  width: 100%;
+}
+
+.all-content{
+  background-color: #eaeaea;
+  border: 1px solid #e70000;
+  border-radius: 5px;
+	width: 550px;
+	margin: 20px auto;
+	box-shadow: 1px 1px 2px 1px rgba(168, 168, 168, 0.53);
+}
+
+.div-img-profael{
+	position: relative;
+  width: 100%;
+	margin-top: 10px;
+}
+
+.img-profael{
+	display: block;
+	margin: 0 auto;
+	width: 206px;
+	height: 206px;
+	border: 1px solid #bfbfbf;
+	border-radius: 120px;
+}
+
+.upload{
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	left: 30px;
+}
+
+.upload-btn-wrapper{
+	margin: 0 auto 0 25%;
+	width: 50px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+	border: 1px solid #232323;
+	border-radius: 150px;
+	background-color: #232323;
+}
+
+.btn {
+  display: inline;
+  background-color: transparent;
+  width: 42px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #232323;
+  border-radius: 3px;
+  transition: all 0.3s;
+	outline: none;
+	border: none;
+}
+
+.btn img{
+	margin-right: 4px;
+	width: 32px;
+	height: 32px;
+}
+
+.inf-edit{
+	margin-right: 30px;
+	width: auto;
+}
+
+.upload-btn-wrapper input[type=file] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+hr{
+  border: 0.5px solid #d0d0d0;
+  width: 60%;
+	margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.span-edit,.span-edit1{
+  display: block;
+  margin: 5px 5px 2px 10px;
+  font-weight: bolder;
+  color: #232323;
+  font-size: 20px;
+  width: auto;
+}
+
+.span-edit1{
+  margin: 5px 0px 2px 10px;
+	width: auto;
+}
+
+.text-edit{
+  width: 80%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 5px 0;
+  font-size: 15px;
+  display: inline-block;
+  border: 1px solid #ff2c2c;
+  box-sizing:border-box;
+  outline: 0;
+	transition: opacity 0.3s;
+}
+
+.text-edit:focus{
+  box-shadow: 1px 1px 1px rgba(167, 167, 167, 0.8);
+  border: 1px solid #ff4444;
+}
+
+.buttons-edit{
+	display: block;
+	background-color: transparent;
+	margin: 15px auto;
+  width: 100px;
+  height: 40px;
+  font-size: 22px;
+	border: 1px solid #232323;
+	color: #232323;
+	border-radius: 3px;
+	transition: all 0.3s;
+	text-shadow: 1px 1px 1px #8d8d8d;
+}
+
+.buttons-edit:hover{
+	cursor: pointer;
+	background-color: #232323;
+	color: #dbdbdb;
+}
+
+.edit-icon{
+	width: 32px;
+	height: 32px;
+}
+
+.current-edit-container{
+	width: 100%;
+	height: 53px;
+	display: block;
+}
+
+.current-edit-container button{
+	border: none;
+	background-color: transparent;
+	border-radius: 30px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 5px;
+	outline: none;
+}
+
+.current-edit-container button:hover{
+	cursor: pointer;
+}
+
+.current-value{
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: auto;
+	font-size: 20px;
+}
+
+.inf-not-edit{
+	margin-right: 30px;
+}
+
+.text-edit-container{
+	display: none;
+}
+
+.X-sign{
+	float: left;
+	margin-left: 50px;
+	margin-top: 15px;
+	height: 25px;
+	width: 40px;
+}
+
+.X-sign:hover{
+	cursor: pointer;
+}
+
+.X-sign:hover .X1,.X-sign:hover .X2{
+	border-color: #d60000;
+	background-color: #d60000;
+}
+
+.X1,.X2{
+	height: 4px;
+	border: 1px solid #232323;
+	background-color: #232323;
+	border-radius: 10px;
+	margin-right: 10%;
+	width: 80%;
+	transition: all 0.3s;
+}
+
+.X1{
+	transform: translate(0px,8px) rotate(45deg);
+}
+
+.X2{
+	transform: translate(0px,2px) rotate(-45deg);
+}
